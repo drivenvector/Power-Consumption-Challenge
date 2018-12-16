@@ -1,1 +1,1 @@
-# Power Consumpstion Challenge
+# Power Consumption Challenge
