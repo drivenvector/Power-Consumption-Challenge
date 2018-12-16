@@ -1,0 +1,46 @@
+The consumption_train data is present in the data.frame format and needs conversion to a time series object.
+
+When assessing predictability, try to determine if there is a consistent relationship between one data point and the next.
+
+consumption data is 0 for surface in xsmall and xxsmall. We will replace 0 values by median of consumption in xsmall and xxsmall.
+
+The time series observations are evenly spaced as the power consumption is recorded on hourly basis.
+
+The time observation index is timestamp that is of the format: yyyy-mm-dd hh:mm: ss. 
+
+
+## consumption_train ##
+This data is the trainig dataset
+
+## EDA
+1. 228689 missing values for  consumption_train$temperature
+2. Investigate and try to fix missing values
+
+## Learning
+I had a fair understanding of data types but now I need to be absolutely sure about
+the data type. For instance, difference between as.integer and as.logical when
+factor variables are involved. Came across this link: http://www.diegobarneche.com/2014-12-11-ufsc/lessons/01-intro_r/data-structures.html
+
+# use typeof() instead of class()
+
+# [] vs [[]]  https://stackoverflow.com/questions/1169456/the-difference-between-bracket-and-double-bracket-for-accessing-the-elem
+
+
+
+Single variable plots: http://bl.ocks.org/patilv/raw/7360425/ 
+
+###Questions:
+1. What percentage of missing values are allowed? 
+2. How to plot outliers?
+
+# https://swcarpentry.github.io/r-novice-inflammation/12-supp-factors/
+
+META DATA OBSERVATIONS
+The consumption is more during weekdays (Monday- Thursday), somewhat more on Friday and less on 
+Weekends (Saturday to Sunday)
+
+
+
+##### FEATURE ENGINEERING #####
+Create Weekday column based on value of *day_is_day_off
+The surface values need to be converted to columns
