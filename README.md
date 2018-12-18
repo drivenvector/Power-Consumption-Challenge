@@ -9,5 +9,7 @@ I wanted to get hands on experience with Deep Learning and LSTM seemed like a po
 I tried running facebook's prophet model but ran into an error even after preprocessing the data and feeding it to the forecasting algorithm of prophet.
 
 Resources referred:
+
 http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
 https://medium.com/deep-math-machine-learning-ai/chapter-10-1-deepnlp-lstm-long-short-term-memory-networks-with-math-21477f8e4235
